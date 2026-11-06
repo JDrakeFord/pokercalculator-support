@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poker Calculator: Odds &amp; Outs - Support</title>
+<style>
+  :root { --bg: #fafaf7; --fg: #17201c; --muted: #53655c; --accent: #0f6b49; --card: #ffffff; --line: #dfe5e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1512; --fg: #eaf1ed; --muted: #93a69c; --accent: #3dd68c; --card: #16211c; --line: #26362f; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--fg); }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px 14px; margin-top: 12px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Poker Calculator: Odds &amp; Outs</h1>
+  <p class="sub">Support and frequently asked questions</p>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs or ideas? Email <a href="mailto:jdrake.ford.dev@gmail.com">jdrake.ford.dev@gmail.com</a>. Please mention your iPhone model and iOS version if something is not working.</p>
+
+  <h2>How it works</h2>
+  <div class="card">
+    <h3>Win chance (Equity)</h3>
+    <p>Choose your two cards, add the flop, turn and river as they come, and set how many opponents you face (1 to 9). The app deals the rest of the hand out randomly 20,000 times and shows how often you win, tie or lose. It recalculates by itself whenever you change a card or a player.</p>
+    <h3>Call or fold (Pot odds)</h3>
+    <p>Enter the pot before the bet and the bet you must call. The app shows the share of the time you need to win to break even and compares it with your current win chance.</p>
+    <h3>Helpful cards (Outs)</h3>
+    <p>With your two cards and a flop or turn picked, the app checks every unseen card and lists the ones that improve your hand, grouped by what they make. It then shows your chance of hitting on the next card and by the last card.</p>
+  </div>
+
+  <h2>Questions</h2>
+  <h3>How accurate are the numbers?</h3>
+  <p>The win chance comes from random simulation, so it can differ by roughly half a percentage point from run to run. Pot odds and outs probabilities are exact arithmetic.</p>
+  <h3>Why do some outs not always win?</h3>
+  <p>An out is a card that makes your hand better. It cannot know your opponents' cards, so a card can still lose to a stronger hand.</p>
+  <h3>What are the opponents' hands?</h3>
+  <p>Opponents hold random hands. The app does not model opponent ranges or betting.</p>
+  <h3>What does the Advanced switch do?</h3>
+  <p>It swaps plain-English wording for poker terms such as equity, pot odds, outs, flop, turn and river. Your choice is remembered on your device.</p>
+  <h3>Is this a gambling app?</h3>
+  <p>No. Poker Calculator is a learning and analysis tool. It has no real-money play, no prizes and no way to place bets.</p>
+  <h3>Does it need an account or internet?</h3>
+  <p>No. Everything runs on your device and works offline.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
